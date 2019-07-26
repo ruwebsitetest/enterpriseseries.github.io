@@ -1,0 +1,889 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+ /******Form*******/
+/* Basic Grey */
+.basic-grey {
+    margin-left:auto;
+	margin-right:auto;
+	max-width: 500px;
+	background: # F7F7F7;
+	padding: 25px 15px 25px 10px;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	color: # 888;
+	text-shadow: 1px 1px 1px # FFF;
+	border:1px solid # E4E4E4;
+}
+.basic-grey h1 {
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom:1px solid # E4E4E4;
+	margin: -10px -15px 30px -10px;;
+	color: # 888;
+}
+.basic-grey h1>span {
+	display: block;
+	font-size: 11px;
+}
+.basic-grey label {
+	display: block;
+	margin: 0px;
+}
+.basic-grey label>span {
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	color: # 888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+	border: 1px solid # DADADA;
+	color: # 888;
+	height: 30px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 70%;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px # ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px # ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px # ECECEC;
+}
+.basic-grey textarea{
+	padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+	background: # FFF url('down-arrow.png') no-repeat right;
+	background: # FFF url('down-arrow.png') no-repeat right);
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 70%;
+	height: 35px;
+	line-height: 25px;
+}
+.basic-grey textarea{
+	height:100px;
+}
+.basic-grey .button {
+	background: # E27575;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: # FFF;
+	box-shadow: 1px 1px 5px # B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px # 9E3F3F;
+	cursor: pointer;
+}
+.basic-grey .button:hover {
+	background: # CF7A7A
+}
+ body{
+ 	font-family: Roboto,Arial,Helvetica,sans-serif;
+ }
+ a{
+ 	transition: all .2s linear;
+ }
+.top_banner{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 8%, #ffffff 28%, #f2f2f2 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 8%,#ffffff 28%,#f2f2f2 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 8%,#ffffff 28%,#f2f2f2 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+height: 80vh;
+}
+.top_wrapper{
+	width: 100%;
+	position: absolute;
+	top: -20px;
+	opacity: 0;
+}
+.main_bg{
+	width: 100%;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.inner_wrapper{
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top:40px;
+}
+.inner_wrapper-2 {
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo h1{
+	width: 180px;
+	margin: 0 auto;
+	line-height: 55px;
+	font-size:26px;
+	color: #d7006d;
+	font-weight: 300;
+	padding-left: 165px;
+	background-image: url(../../../images/us/landing/business/himirror_business_logo.png);
+	background-repeat: no-repeat;
+	background-size: 180px auto;
+}
+.logo h2{
+	color: #363636;
+	font-size: 30px;
+	font-weight: 200;
+}
+.product_wrapper{
+	margin-top: 30px;
+
+}
+.product_item{
+	position: absolute;
+}
+.product_item img{
+	width: 100%;
+}
+.product_pro{
+	left: 30%;
+	width: 22%;
+	top: 50px;
+	opacity: 0;
+
+}
+.product_enterprise{
+	left: 40%;
+	width: 30%;
+	top: 220px;
+}
+.animate1{
+	transition-timing-function: cubic-bezier(0.09, 0.63, 0.16, 0.9);
+    transition-duration: 1s;
+    transition-property: all;
+}
+.bg-wrapper{
+background: #f2f2f2;
+}
+.inner_wrapper_m{
+	width: 1100px;
+	margin: 0 auto;
+}
+.content_2cl{
+	overflow: hidden;
+	display: flex;
+}
+
+.cl-l{
+	float: left;
+	width: 50%;
+}
+.cl-r{
+	float: left;
+	width: 50%;
+}
+.wrapper-xl{
+	padding-top: 100px;
+}
+.wrapper-l{
+	padding: 50px;
+}
+.wrapper-m{
+	padding: 20px 50px;
+}
+.intro-img{
+	flex: 1;
+	height: 100%;
+	position: relative;
+}
+.intro-img img{
+	width: 98%;
+	position: absolute;
+	bottom: 0;
+	left: 2%
+}
+.fullimg{
+	width: 100%;
+}
+.fullimg_s{
+	width: 80%;
+}
+.inner_wrapper_s{
+	width: 960px;
+	margin: 0 auto;
+}
+.feature_box{
+	background: #f2f2f2; /* Old browsers */
+	margin: 30px 0 50px 0;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+}
+.feature_dis{
+	width: 50%;
+}
+.ft-1 .dis_right{
+	margin-left: 50%;
+}
+.ft-1{
+	position: relative;
+}
+.ft-1 .feature_img{
+	position: absolute;
+	top: -40px;
+	left: 80px;
+}
+.ft-1 .feature_img img{
+	width: 55%;
+}
+.ft-2{
+	overflow: hidden;
+}
+.ft-2 .feature_img{
+	float: left;
+	width: 50%;
+}
+.ft-2 .feature_img img{
+	width: 100%;
+}
+.ft-3{
+	overflow: hidden;
+ 	background-image: url(../../../images/us/landing/business/himirror_business_feature_4.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto ;
+}
+.float_dis{
+	float: right;
+	z-index: 1;
+	width: 34%;
+	right: 0;
+	padding:80px 30px;
+	flex: 1;
+	height: 100%;
+	max-height: 480px;
+background: -moz-linear-gradient(top,  rgba(183,0,84,0.85) 26%, rgba(177,3,87,0.85) 29%, rgba(27,85,157,0.85) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9b70054', endColorstr='#d91b559d',GradientType=0 ); /* IE6-9 */
+
+}
+
+.float_dis .under_line{
+	border-bottom: 1px #fff solid;
+}
+.spec_wrapper{
+	width: 650px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.spec_box{
+	width: 44%;
+	margin:20px 3%;
+	text-align: center;
+	float: left;
+}
+.box_r{
+	padding: 30px 0 45px 0;
+}
+.box_l{
+	padding: 30px 0 0 0;
+}
+.spec_box img{
+	width: 100%;
+}
+.spec_box img:hover{
+	 transform: scale(1.1);
+	  transition: transform .5s;
+}
+.box_ppl{
+	background-color: #f2f2f2;
+}
+.box_blu{
+	background-color: #f2f2f2;
+}
+.spec_box a.link{
+	display: block;
+	width: 70%;
+	line-height: 40px;
+	margin: 0 auto;
+}
+.top_buttom{
+    display: block;
+    width: 100%;
+    line-height: 45px;
+    background:rgba(241,100,136,0.6);
+    color: #fff;
+}
+.top_buttom:hover {
+    color: #fff;
+    background: #DDD2B7;
+}
+.box_ppl a.link{
+	color: #ce005b;
+}
+.box_ppl a.link:hover{
+	color: #ce005b;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.box_blu a.link{
+	color: #ce005b;
+}
+.box_blu a.link:hover{
+	color: #ce005b;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.contact_wrapper{
+background: -moz-linear-gradient(top,  rgba(232,232,232,0.85) 0%, rgba(255,255,255,0.85) 38%, rgba(255,255,255,0.85) 39%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(232,232,232,0.85) 0%,rgba(255,255,255,0.85) 38%,rgba(255,255,255,0.85) 39%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(232,232,232,0.85) 0%,rgba(255,255,255,0.85) 38%,rgba(255,255,255,0.85) 39%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e8e8e8', endColorstr='#d9ffffff',GradientType=0 ); /* IE6-9 */
+}
+.contact_info{
+	font-size: 1.4em;
+	font-weight: 300;
+	color: #333333;
+	margin-left: -200px;
+}
+.contact_box{
+	color:#333;
+	padding: 10px 20px;
+	border: 1px #666 solid;
+	border-radius: 2px;
+	margin: 20px 10px;
+}
+.contact_box:hover{
+	background-color: rgba(231,198,232,.2);
+}
+.contact_box2{
+	color:#fff;
+	padding:10px 65px;
+	border: 1px #666 solid;
+	border-radius: 2px;
+	margin:20px 80px;
+	background: -webkit-linear-gradient(to right,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%);
+	background: -o-linear-gradient(to right,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%);
+	background: -moz-linear-gradient(to right,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%);
+	background: linear-gradient(to right,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%);
+}
+.contact_wrapper{
+	margin-top: 50px;
+}
+.contact_wrapper .inner_wrapper_m{
+	position: relative;
+	background-size: 100% auto;
+	background-image: url(../../../images/us/landing/business/himirror_business_main_bg.png);
+	background-position: center;
+}
+/******Form*******/
+/* Basic Grey */
+.title_h3 {
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: center;
+    color: #ce005b;
+}
+
+.basic-grey {
+    margin: 0 auto;
+    width: 100%;
+    background: #F7F7F7;
+    font: 12px  serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border: 1px solid #E4E4E4;
+}
+.basic-grey h1 {
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom:1px solid #E4E4E4;
+	margin: -10px -15px 30px -10px;;
+	color: #888;
+}
+.basic-grey h1>span {
+	display: block;
+	font-size: 11px;
+}
+.basic-grey label {
+	display: block;
+	margin: 0px;
+}
+.basic-grey label>span {
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+	border: 1px solid #DADADA;
+	color: #888;
+	height: 30px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 70%;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+	padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+	background: #FFF url('down-arrow.png') no-repeat right;
+	background: #FFF url('down-arrow.png') no-repeat right;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 70%;
+	height: 35px;
+	line-height: 25px;
+}
+.basic-grey textarea{
+	height:100px;
+}
+.basic-grey .button {
+	background: #E27575;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 5px #B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+}
+.basic-grey .button:hover {
+	background: #CF7A7A
+}
+
+/*******Spce********/
+.contact_img{
+	width: 25%;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+/*---font---*/
+.title_h2{
+	font-size: 1.8em;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 20px;
+}
+.title_h3{
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+p{
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #333;
+	margin: 10px 0;
+}
+.align-c{
+	text-align: center;
+}
+.ppl{
+	color:#ce005b;
+}
+.blu{
+	color: #ce005b;
+}
+.wt{
+	color: #fff;
+}
+.bg-w{
+	background-color: #fff;
+}
+.bg-b{
+background: #e6a6c3; /* Old browsers */
+background: -moz-linear-gradient(top,  #e6a6c3 41%, #b0c3dc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e6a6c3 41%,#b0c3dc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e6a6c3 41%,#b0c3dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6a6c3', endColorstr='#b0c3dc',GradientType=0 ); /* IE6-9 */
+}
+
+.under_line{
+	line-height: 2;
+	border-bottom: 1px #f16488 solid;
+}
+
+.spec_detail{
+	width: 80%;
+	margin:0 auto;
+	text-align: center;
+}
+
+/*-----table-----*/
+table.spec-table {
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.spec-table td, table.spec-table th {
+  padding: 15px 5px;
+}
+table.spec-table tbody td {
+  font-size: 16px;
+  color: #4c4c4c;
+}
+table.spec-table tr:nth-child(odd) {
+  
+}
+table.spec-table tfoot td {
+  font-size: 14px;
+}
+table.spec-table tbody tr{
+	 border-collapse: collapse;
+	  border-top: 1px solid #f16488;
+	   border-bottom: 1px solid #f16488;
+}
+table.spec-table tfoot .links {
+  text-align: right;
+}
+table.spec-table tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.specimg{
+	width: 80%;
+	margin: 0 auto;
+}
+.product_m_show,.ft-4{
+	display: none;
+}
+@media only screen and (max-width: 1140px) {
+	.inner_wrapper{
+		width: 100%;
+	}
+	.inner_wrapper_m{
+		width: 90%;
+	}
+	.inner_wrapper_s{
+		width: 95%;
+	}
+	.inner_wrapper-2{
+		width: 100%;
+	}
+	.intro_cl .cl-l{
+		float: initial;
+		width: 100%;
+	}
+	.intro_cl .cl-r{
+		float: initial;
+		width: 100%;
+	}
+	.content_2cl.intro_cl{
+		display: block;
+	}
+	.intro-img img{
+		width: 50%;
+		position: initial;
+		margin: 0 auto;
+		display: inherit;
+		margin-top: 20px;
+	}
+	.ft-1 .feature_img img{
+		width: 52%;
+	}
+	.product_pro{
+		width: 27%;
+	}
+	.product_enterprise{
+		width: 35%;
+	}
+	.wrapper-xl{
+		padding-top: 70px;
+	}
+	.ft-3{
+		background-size: auto 100%;
+	}
+}
+
+@media only screen and (max-width: 865px) {
+	.product_wrapper{
+		display: none;
+	}
+	.product_m_show{
+		display: block;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+	.product_m_show img{
+		width: 90%;
+		margin: 30px auto 0 auto;
+	}
+	.top_banner{
+		height: auto;
+	}
+	.logo h1{
+		width: 180px;
+		margin: 0 auto;
+		font-size: 20px;
+		background-size: 140px auto;
+		background-position: 20px 0;
+		padding-left: 130px;
+		line-height: 40px;
+	}
+	.logo h2{
+		font-size: 20px;
+	}
+	.wrapper-m{
+		padding: 20px 15px;
+	}
+	.intro-img img{
+		width: 80%;
+	}
+	.cl-l,.cl-r{
+		float: initial;
+		width: 100%;
+	}
+	.content_2cl{
+		display: block;
+	}
+	.ft-1 .dis_right{
+		margin-left: 0;
+	}
+	.feature_dis{
+		width: 100%;
+	}
+	.feature_box{
+		display: block;
+	}
+	.ft-1 .feature_img{
+		position: initial;
+		text-align: center;
+	}
+	.ft-1 .feature_img img{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.title_h3{
+		font-size: 1.4em;
+		line-height: 1.5;
+	}
+	.ft-2 .feature_img{
+		float: initial;
+		width: 100%;
+	}
+	.wrapper-xl{
+		padding-top: 40px;
+	}
+	.float_dis{
+		float: initial;
+		width: auto;
+		padding: 30px 20px;
+	}
+	.ft-4{
+		display: block;
+		width: 100%;
+	}
+	.spec_wrapper{
+		width: 100%;
+	}
+	.spec_box{
+		width: auto;
+		float: initial;
+	}
+	.spec_box a.link{
+		font-size: 18px;
+	}
+	.spec_detail{
+		width: 90%;
+		margin-top: 20px
+	}
+	.contact_info{
+		margin-left: 0;
+		font-size: 1.6em;
+	}
+	.inner_wrapper{
+		padding-top: 20px;
+	}
+	.inner_wrapper-2{
+		padding-top: 20px;
+	}
+	.contact_box{
+		display: block;
+		margin: 10px 0;
+		padding: 10px 5px;
+		font-size: 1.2rem;
+	}
+	.contact_box2{
+		display: block;
+		margin: 10px 0;
+
+		padding: 10px 5px;
+		font-size: 1.2rem;
+		background: linear-gradient(to right,  rgba(183,0,84,0.85) 26%,rgba(177,3,87,0.85) 29%,rgba(27,85,157,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+	.contact_img{
+		display: none;
+	}
+	.wrapper-l{
+		padding: 30px 0;
+	}
+	.contact_wrapper{
+		margin-top: 0;
+	}
+	.top_banner{
+		padding: 24px 0;
+	}
+	.ft-1{
+		margin-top: 0;
+	}
+	.feature_box{
+		margin-top: 20px;
+	}
+	.main_bg{
+		width: 280%;
+	}
+	.top_wrapper{
+		width: 100%;
+		overflow: hidden;
+	}
+	p{
+		font-size: 1.1em;
+		font-weight: 400;
+	}
+}
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../../../images/us/landing/business/overlay.png) repeat 0 0; opacity: 0.9; filter: alpha(opacity = 90);}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; }
+    #cboxTopRight{width:21px; height:21px;}
+    #cboxBottomLeft{width:21px; height:21px;}
+    #cboxBottomRight{width:21px; height:21px;}
+    #cboxMiddleLeft{width:21px;}
+    #cboxMiddleRight{width:21px; }
+    #cboxTopCenter{height:21px; }
+    #cboxBottomCenter{height:21px; }
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxLoadingOverlay{background:url(../../../images/us/landing/business/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../../../images/us/landing/business/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../../../images/us/landing/business/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../../../images/us/landing/business/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxClose{position:absolute; top:10px; right:10px; background:url(../../../images/us/landing/business/controls.png) no-repeat; width:32px; height:32px; text-indent:-9999px;}
+        #cboxClose:hover{background-color: :#efefef;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
